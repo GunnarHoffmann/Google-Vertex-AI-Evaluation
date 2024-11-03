@@ -1,6 +1,7 @@
 import streamlit
 import vertexai
 import streamlit as st
+import json
 
 # Configure Google Vertex AI for Gemini
 vertex_ai_credentials_json = st.secrets["vertex_ai_key"]
