@@ -1,5 +1,6 @@
 import streamlit
 import vertexai
+import streamlit as st
 
 vertexai.init(project='prj-mygcpproject-219-8a4e', location='europe-west4')
 
