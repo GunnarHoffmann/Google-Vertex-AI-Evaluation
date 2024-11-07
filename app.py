@@ -6,7 +6,7 @@ from google.oauth2 import service_account
 from google.cloud import aiplatform
 
 # Headline
-st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png", width=100)
+st.image("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png", width=100)
 st.title("Welcome Gert")
 
 # Configure Google Vertex AI for Gemini
