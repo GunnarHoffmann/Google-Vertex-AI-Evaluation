@@ -34,6 +34,7 @@ model = GenerativeModel("gemini-1.5-flash-001")
 
 # Add a header and question input
 st.title('Gemini Q&A')
+st.header('Welcome Gert')
 st.header('Ask anything to Google Gemini!')
 question = st.text_input('Enter your question:', 'Why is the sky blue?')
 
