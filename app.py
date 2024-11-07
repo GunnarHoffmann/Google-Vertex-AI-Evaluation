@@ -18,6 +18,5 @@ from vertexai.generative_models import GenerativeModel
 
 
 model = GenerativeModel("gemini-1.5-flash-001")
-st.write("Hi")
+st.write("Why is the sky blue?")
 st.write(model.generate_content("Why is sky blue?").text)
-st.write("Hello again")
