@@ -7,7 +7,7 @@ from google.cloud import aiplatform
 
 # Headline
 st.image("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png", width=100)
-st.image("https://upload.wikimedia.org/wikipedia/commons/2/2d/E.ON_Logo.svg", width=100)
+st.image("https://companieslogo.com/img/orig/EONGY_BIG-6bfae4b4.png?t=1632523690", width=100)
 st.title("Welcome Gert")
 
 # Configure Google Vertex AI for Gemini
