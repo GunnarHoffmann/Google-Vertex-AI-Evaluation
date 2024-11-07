@@ -5,6 +5,9 @@ import json
 from google.oauth2 import service_account
 from google.cloud import aiplatform
 
+# Headline
+st.title("Welcome Gert")
+
 # Configure Google Vertex AI for Gemini
 vertex_ai_credentials_json = st.secrets["vertex_ai_key"]
 vertex_ai_credentials_info = json.loads(vertex_ai_credentials_json)
@@ -16,7 +19,10 @@ aiplatform.init(project=project_id, location=location, credentials=vertex_ai_cre
 vertexai.init(project='prj-mygcpproject-219-8a4e', location='europe-west4')
 from vertexai.generative_models import GenerativeModel
 
-
 model = GenerativeModel("gemini-1.5-flash-001")
-st.write("Why is the sky blue?")
-st.write(f"Answer by Google Gemini Flash: {model.generate_content("Why is sky blue?").text}")
+
+# Create an input field for user question
+user_question = st.text_input("Enter your question:")
+if user_question:
+    response = model.generate_content(user_question).text
+    st.write(f"Answer by Google Gemini Flash: {response}")
